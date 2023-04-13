@@ -16,7 +16,7 @@ class GetBuildingsCubit extends Cubit<GetBuildingsState> {
     emit(GetBuildingsInProgress());
     try {
       var response =
-          await http.get(Uri.parse("http://skygulf.zona.ae/api/$lang/building/"));
+          await http.get(Uri.parse("https://Skygulfapp.gulfsky-app.website/api/$lang/building/"));
       Map<String, dynamic> body = jsonDecode(response.body);
       List<Building> buildings = [];
 

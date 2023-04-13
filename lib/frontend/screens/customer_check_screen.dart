@@ -461,7 +461,7 @@ class _NonTenantCheckFormState extends State<NonTenantCheckForm> {
                           var loginToken = localStorage.get('token');
                           var response = await http.post(
                             Uri.parse(
-                              'http://skygulf.zona.ae/api/user/checkContract?contract_id=$contractId',
+                              'https://Skygulfapp.gulfsky-app.website/api/user/checkContract?contract_id=$contractId',
                             ),
                             headers: {
                               'Content-type': 'application/json',

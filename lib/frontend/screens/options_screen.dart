@@ -41,7 +41,7 @@ class _OptionsScreenState extends State<OptionsScreen> {
                       SharedPreferences localStorage =
                           await SharedPreferences.getInstance();
                       var loginToken = localStorage.get('token');
-                      var url = 'http://skygulf.zona.ae/api/auth/logout';
+                      var url = 'https://Skygulfapp.gulfsky-app.website/api/auth/logout';
                       var response = await http.post(Uri.parse(url), headers: {
                         'Content-type': 'application/json',
                         'Accept': 'application/json',
@@ -84,7 +84,7 @@ class _OptionsScreenState extends State<OptionsScreen> {
                 SharedPreferences localStorage =
                     await SharedPreferences.getInstance();
                 var loginToken = localStorage.get('token');
-                var url = 'http://skygulf.zona.ae/api/auth/logout';
+                var url = 'https://Skygulfapp.gulfsky-app.website/api/auth/logout';
                 var response = await http.post(Uri.parse(url), headers: {
                   'Content-type': 'application/json',
                   'Accept': 'application/json',

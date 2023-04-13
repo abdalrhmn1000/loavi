@@ -13,7 +13,7 @@ class SignupBloc extends Bloc<SignupEvent, SignupState> {
     emit(SignUpInProgress());
     try {
       var url =
-          'http://skygulf.zona.ae/api/auth/register?email=${event.email}&first_name=${event.firstName}&last_name=${event.lastName}&phone=${event.phoneNumber}&gender=${event.gender}&password=${event.password}&profile_image=\'http://skygulf.zona.ae/images/hero-image.png\'&date_of_birth=${event.birthDate}&room_number=22&building_id=22';
+          'https://Skygulfapp.gulfsky-app.website/api/auth/register?email=${event.email}&first_name=${event.firstName}&last_name=${event.lastName}&phone=${event.phoneNumber}&gender=${event.gender}&password=${event.password}&profile_image=\'http://skygulf.zona.ae/images/hero-image.png\'&date_of_birth=${event.birthDate}&room_number=22&building_id=22';
       var response = await http.post(Uri.parse(url));
       if (response.statusCode == 200) {
         emit(SignUpSuccess());

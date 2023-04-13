@@ -18,7 +18,7 @@ class PlaceReviewCubit extends Cubit<PlaceReviewState> {
       var loginToken = localStorage.get('token');
       var response = await http.post(
           Uri.parse(
-            'http://skygulf.zona.ae/api/user/review?rating=$rating&content=$review',
+            'https://Skygulfapp.gulfsky-app.website/api/user/review?rating=$rating&content=$review',
           ),
           headers: {
             'Content-type': 'application/json',

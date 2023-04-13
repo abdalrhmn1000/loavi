@@ -20,7 +20,7 @@ class EvacuationOrderCubit extends Cubit<EvacuationOrderState> {
       var loginToken = localStorage.get('token');
       var response = await http.post(
           Uri.parse(
-            'http://skygulf.zona.ae/api/user/evacuation_orders?is_real_estate_tanent=1&address=\'\'&started_at=$evacDate&building_id=$buildingId&room_number=$roomNumber&is_the_flat_empty=${(isEmpty) ? 1 : 0}&number_of_lease_years=$tenancyYears&reason=$reason',
+            'https://Skygulfapp.gulfsky-app.website//api/user/evacuation_orders?is_real_estate_tanent=1&address=\'\'&started_at=$evacDate&building_id=$buildingId&room_number=$roomNumber&is_the_flat_empty=${(isEmpty) ? 1 : 0}&number_of_lease_years=$tenancyYears&reason=$reason',
           ),
           headers: {
             'Content-type': 'application/json',

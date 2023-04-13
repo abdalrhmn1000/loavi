@@ -34,7 +34,7 @@ class _SignupScreenState extends State<SignupScreen> {
 
   Future<String> login(String email, String password) async {
     var url =
-        'http://skygulf.zona.ae/api/auth/login?email=$email&password=$password';
+        'https://Skygulfapp.gulfsky-app.website/api/auth/login?email=$email&password=$password';
     var response = await http.post(Uri.parse(url));
     var body = jsonDecode(response.body);
     if (response.statusCode == 200) {

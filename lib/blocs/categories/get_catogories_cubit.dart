@@ -15,7 +15,7 @@ class GetCatogoriesCubit extends Cubit<GetCatogoriesState> {
 
     try {
       var response =
-          await http.get(Uri.parse("http://skygulf.zona.ae/api/$lang/categories/"));
+          await http.get(Uri.parse("https://Skygulfapp.gulfsky-app.website/api/$lang/categories/"));
       Map<String, dynamic> x = jsonDecode(response.body);
 
       List<Category> categories = [];

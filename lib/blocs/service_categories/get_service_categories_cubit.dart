@@ -14,7 +14,7 @@ class GetServiceCategoriesCubit extends Cubit<GetServiceCategoriesState> {
     emit(GetServiceCategoriesInProgress());
     try {
       var response = await http.get(Uri.parse(
-          'http://skygulf.zona.ae/api/categories/services/$categoryId'));
+          'https://Skygulfapp.gulfsky-app.website/api/categories/services/$categoryId'));
       Map<String, dynamic> body = jsonDecode(response.body);
       List<CategoryService> services = [];
 

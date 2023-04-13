@@ -17,7 +17,7 @@ class JoinBundleCubit extends Cubit<JoinBundleState> {
       var loginToken = localStorage.get('token');
       var response = await http.post(
           Uri.parse(
-            'http://skygulf.zona.ae/api/user/createContract?bundle_id=$bundleId&location=Dubai',
+            'https://Skygulfapp.gulfsky-app.website/api/user/createContract?bundle_id=$bundleId&location=Dubai',
           ),
           headers: {
             'Content-type': 'application/json',

@@ -16,7 +16,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
     emit(LoginInProgress());
     try {
       var url =
-          'http://skygulf.zona.ae/api/auth/login?email=${event.email}&password=${event.password}';
+          'https://Skygulfapp.gulfsky-app.website/api/auth/login?email=${event.email}&password=${event.password}';
       var response = await http.post(Uri.parse(url));
       var body = jsonDecode(response.body);
       if (response.statusCode == 200) {

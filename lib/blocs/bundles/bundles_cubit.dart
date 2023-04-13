@@ -16,9 +16,9 @@ class BundlesCubit extends Cubit<BundlesState> {
     emit(BundlesInProgress());
     try {
       var response =
-          await http.get(Uri.parse("http://skygulf.zona.ae/api/$lang/bundles/"));
+          await http.get(Uri.parse("https://Skygulfapp.gulfsky-app.website/api/$lang/bundles/"));
       var response2 =
-          await http.get(Uri.parse('http://skygulf.zona.ae/api/bundlePrices'));
+          await http.get(Uri.parse('https://Skygulfapp.gulfsky-app.website/api/bundlePrices'));
       Map<String, dynamic> x = jsonDecode(response.body);
       Map<String, dynamic> y = jsonDecode(response2.body);
       List<Bundle> bundles = [];

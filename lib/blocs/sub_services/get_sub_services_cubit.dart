@@ -14,7 +14,7 @@ class GetSubServicesCubit extends Cubit<GetSubServicesState> {
     emit(GetSubServicesInProgress());
     try {
       var response = await http.get(
-          Uri.parse('http://skygulf.zona.ae/api/services/main/$serviceId'));
+          Uri.parse('https://Skygulfapp.gulfsky-app.website/api/services/main/$serviceId'));
       Map<String, dynamic> body = jsonDecode(response.body);
 
       List<SubService> subServices = [];

@@ -53,7 +53,7 @@ class PlaceOrderCubit extends Cubit<PlaceOrderState> {
       }
       var response = await http.post(
           Uri.parse(
-            'http://skygulf.zona.ae/api/user/orders',
+            'https://Skygulfapp.gulfsky-app.website/api/user/orders',
           ),
           body: jsonEncode(data),
           headers: {
